@@ -1,59 +1,35 @@
-# Bootcamp Django Project
+# Django Bootcamp
 
-Привет. Это мой учебный проект на Django.
+Простий навчальний проєкт на Django.
 
-## Что тут есть
+## Додатки
 
-- `aggregator` — простая агрегация данных
-- `local_government` — решения местных советов и их агрегация
+- `aggregator` — агрегація числових даних
+- `local_government` — облік рішень місцевих рад і зведена статистика
 
-## Что умеет API
+## API
 
 ### Aggregator
 
 - `GET /api/aggregate/`
 - `GET /api/aggregate/?group_by=source`
 
-Считает:
-- сумму
-- среднее
-- минимум
-- максимум
-- количество
-
 ### Local Government
 
 - `GET /api/local-government/decisions/`
+- `GET /api/local-government/decisions/?limit=50&offset=0`
 - `GET /api/local-government/decisions/aggregate/`
 - `GET /api/local-government/decisions/aggregate/?group_by=category`
 
-Считает:
-- total_decisions
-- total_budget
-
-## Как запускать
-
-1. Установить Django
-2. Сделать миграции
-3. Запустить сервер
-
-Команды через make:
+## Запуск
 
 ```bash
 make migrate
 make run
 ```
 
-Тесты:
+## Тести
 
 ```bash
 make test
 ```
-
-## Админка
-
-- `/admin/`
-
-## Важно
-
-Это очень простой проект для практики.
