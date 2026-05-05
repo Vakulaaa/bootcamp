@@ -20,6 +20,5 @@ from django.urls import include, path
 # Глобальні URL проєкту: адмінка і API-маршрути додатків.
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('aggregator.urls')),
     path('api/local-government/', include('local_government.urls')),
 ]

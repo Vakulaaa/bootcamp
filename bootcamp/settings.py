@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Наші локальні додатки.
-    'aggregator',
     'local_government',
 ]
 

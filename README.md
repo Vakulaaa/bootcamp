@@ -2,19 +2,11 @@
 
 Простий навчальний проєкт на Django.
 
-## Додатки
+## Додаток
 
-- `aggregator` — агрегація числових даних
 - `local_government` — облік рішень місцевих рад і зведена статистика
 
 ## API
-
-### Aggregator
-
-- `GET /api/aggregate/`
-- `GET /api/aggregate/?group_by=source`
-
-### Local Government
 
 - `GET /api/local-government/decisions/`
 - `GET /api/local-government/decisions/?limit=50&offset=0`
